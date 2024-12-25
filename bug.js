@@ -1,0 +1,2 @@
+In React Router Dom v6, attempting to access the 
+`useParams()` hook outside of a component wrapped with `Routes` or a route element will result in an error.  This is because `useParams` relies on the routing context provided by these components.  The error message may not be immediately clear, often presenting as an unexpected behavior or a completely unrelated error further down the line because the `params` object is undefined.
